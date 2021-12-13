@@ -1,0 +1,7 @@
+Running Experiments
+Dataset:CIFAR10 (one class per task)
+OWM
+	python run_cifar_5Tasks.py
+AOP
+	python run_cifar_5Tasks_AOP.py
+
