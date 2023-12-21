@@ -1,0 +1,76 @@
+{
+  "builder_name": "coqa",
+  "citation": "@article{reddy-etal-2019-coqa,\n    title = \"{C}o{QA}: A Conversational Question Answering Challenge\",\n    author = \"Reddy, Siva  and\n      Chen, Danqi  and\n      Manning, Christopher D.\",\n    journal = \"Transactions of the Association for Computational Linguistics\",\n    volume = \"7\",\n    year = \"2019\",\n    address = \"Cambridge, MA\",\n    publisher = \"MIT Press\",\n    url = \"https://aclanthology.org/Q19-1016\",\n    doi = \"10.1162/tacl_a_00266\",\n    pages = \"249--266\",\n}\n",
+  "config_name": "default",
+  "dataset_name": "coqa",
+  "dataset_size": 19176792,
+  "description": "CoQA: A Conversational Question Answering Challenge\n",
+  "download_checksums": {
+    "https://nlp.stanford.edu/data/coqa/coqa-train-v1.0.json": {
+      "num_bytes": 49001836,
+      "checksum": null
+    },
+    "https://nlp.stanford.edu/data/coqa/coqa-dev-v1.0.json": {
+      "num_bytes": 9090845,
+      "checksum": null
+    }
+  },
+  "download_size": 58092681,
+  "features": {
+    "source": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "story": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "questions": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "answers": {
+      "feature": {
+        "input_text": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "answer_start": {
+          "dtype": "int32",
+          "_type": "Value"
+        },
+        "answer_end": {
+          "dtype": "int32",
+          "_type": "Value"
+        }
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "https://stanfordnlp.github.io/coqa/",
+  "license": "",
+  "size_in_bytes": 77269473,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 17953365,
+      "num_examples": 7199,
+      "dataset_name": "coqa"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 1223427,
+      "num_examples": 500,
+      "dataset_name": "coqa"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
